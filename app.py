@@ -167,4 +167,4 @@ iface = gr.Interface(
     description="Enter RFID codes to add items to the cart, inquire about products, remove items from the cart, and get recommendations.",
 )
 
-iface.launch(pwa=True)
+demo.launch(demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 8000))))
