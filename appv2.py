@@ -112,7 +112,7 @@ def get_recommendations(product_name, history):
         f"The user is interested in {product_name}.\n"
         f"User purchase history: {history_text}\n\n"
         "Suggest 4-6 personalized complementary items (short list), "
-        "one useful tip (e.g., storage/cooking), one reminder (e.g., expiry or pairings), "
+        "one useful tip (e.g., storage/cooking), one reminder (e.g., expiry or pairings), details about previous purchases - give suggestion like don't buy this product as it is recently bought or repeat this product its going to end in your kitchen based on the quantities and days "
         "and any current deal suggestions or coupon ideas (if applicable). Keep it concise and friendly."
     )
     return safe_openai_chat(prompt)
